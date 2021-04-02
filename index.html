@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="menu">
+        <h1>Currencies</h1>
+        <p>USD = US Dollars</p>
+        <p>EUR = Euros</p>
+        <p>JPY = Japanese Yen</p>
+        <p>AUD = Australian Dollars</p>
+        <p>CAD = Canadian Dollars</p>
+        <p>NZD = Newzealand Dollars</p>
+        <p>INR = Indian Rupees</p>
+        <p>RUB = Russian Ruble</p>
+        <p>SGD = Singapore Dollars</p>
+        <p>CHF = Swiss Franc</p>
+        <p>GBP = Pound Sterling</p>
+        <p>KWD = Kuwaiti Dinar</p>
+        <p>KYD = Caymanian Dollars</p>
+    </div>
+    <div class="bars">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="container">
+        <h1>CURRENCY CONVERTER</h1>
+        <div class="currencies">
+            <p>FROM</p>
+            <select name="countries" id="countries1">
+                <option value="none" selected disabled>--Choose a currency--</option>
+                <option value="1">USD</option>
+                <option value="2">EUR</option>
+                <option value="3">JPY</option>
+                <option value="4">AUD</option>
+                <option value="5">CAD</option>
+                <option value="6">NZD</option>
+                <option value="7">INR</option>
+                <option value="8">RUB</option>
+                <option value="9">SGD</option>
+                <option value="10">CHF</option>
+                <option value="11">GBP</option>
+                <option value="12">KWD</option>
+                <option value="13">KYD</option>
+            </select>
+            <p>TO</p>
+            <select name="countries" id="countries2">
+                <option value="none" selected disabled>--Choose a currency--</option>
+                <option value="1">USD</option>
+                <option value="2">EUR</option>
+                <option value="3">JPY</option>
+                <option value="4">AUD</option>
+                <option value="5">CAD</option>
+                <option value="6">NZD</option>
+                <option value="7">INR</option>
+                <option value="8">RUB</option>
+                <option value="9">SGD</option>
+                <option value="10">CHF</option>
+                <option value="11">GBP</option>
+                <option value="12">KWD</option>
+                <option value="13">KYD</option>
+            </select>
+        </div>
+        
+        <input type="text" id="amount" maxlength="15" placeholder="Enter your amount...">
+        <button class="convert">Convert</button>
+        <div class="output"></div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
